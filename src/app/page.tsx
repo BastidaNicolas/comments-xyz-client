@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "./page.module.css";
 import UserCard from "@/components/userCard";
+import ScoreCard from "@/components/scoreCard";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +14,24 @@ export default function Home() {
       </div>
       <div className="bg-zinc-900 py-3 px-5 my-2 rounded">
         <h2 className="text-xl font-bold border-b-2 mb-5">User Card</h2>
-        <UserCard/>
+        <UserCard />
+      </div>
+      <div className="bg-zinc-900 py-3 px-5 my-2 rounded">
+        <h2 className="text-xl font-bold border-b-2 mb-5">Score Card</h2>
+        {/*ScoreCard always tries to be 100% width*/}
+        <div className="max-w-[242px]">
+          <ScoreCard>
+            <UserCard />
+            <UserCard />
+            <UserCard />
+            <UserCard />
+            <UserCard />
+          </ScoreCard>
+        </div>
+      </div>
+      <div className="bg-zinc-900 py-3 px-5 my-2 rounded">
+        <h2 className="text-xl font-bold border-b-2 mb-5">Search bar</h2>
+        <UserCard />
       </div>
     </div>
   );
