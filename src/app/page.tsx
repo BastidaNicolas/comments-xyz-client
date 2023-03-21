@@ -5,6 +5,7 @@ import UserCard from "@/components/userCard";
 import ScoreCard from "@/components/scoreCard";
 import Searchbar from "@/components/searchbar";
 import UserAbout from "@/components/userAbout";
+import UserMenu from "@/components/userMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,6 +42,10 @@ export default function Home() {
         <div className="max-w-lg">
           <UserAbout />
         </div>
+      </div>
+      <div className="bg-zinc-900 py-3 px-5 my-2 rounded">
+        <h2 className="text-xl font-bold border-b-2 mb-5">User menu</h2>
+        <UserMenu/> 
       </div>
     </div>
   );
