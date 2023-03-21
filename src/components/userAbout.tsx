@@ -4,7 +4,7 @@ import placeholderImg from "@/media/logo.png";
 
 export default function UserAbout() {
   return (
-    <div className="flex flex-col bg-neutral-800 rounded-lg px-1 sm:px-2.5 pb-2.5 mt-10">
+    <div className="flex flex-col bg-neutral-800 rounded-lg px-1 sm:px-2.5 pb-2.5 mt-10 pt-0.5">
       <div className="flex flex-row">
         <div className="relative min-w-[4rem] mr-2.5">
           <Image
@@ -17,7 +17,7 @@ export default function UserAbout() {
         </div>
         <div className="text-lg font-bold truncate">Miguel Estefano</div>
       </div>
-      <p className="text-xs font-normal my-2">
+      <p className="text-sm font-normal my-2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
         tempor, nulla pharetra sodales cursus, turpis ex iaculis tortor, nec
         eleifend sapien ipsum sed sapien.
