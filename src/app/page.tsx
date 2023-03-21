@@ -30,8 +30,9 @@ export default function Home() {
           </ScoreCard>
         </div>
       </div>
-      <div className="bg-zinc-900 py-3 px-5 my-2 rounded">
+      <div className="bg-zinc-900 py-3 px-5 my-2 rounded min-h-[17rem]">
         <h2 className="text-xl font-bold border-b-2 mb-5">Searchbar</h2>
+        {/* searchbar has UserCard as dependency */}
         <Searchbar/>
       </div>
     </div>

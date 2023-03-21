@@ -1,4 +1,25 @@
+'use client';
+import { ReactNode, useState } from "react";
+import UserCard from "./userCard";
+
 export default function Searchbar() {
+
+  const [result, setResult] = useState<any>("");
+
+  // This is a dummy function
+  const search = (e: any) => {
+    if (e.target.value == "") {
+      setResult(false)
+      return
+    }
+    if (e.target.value !== "user not found") {
+      setResult([<UserCard/>,<UserCard/>,<UserCard/>])
+      return
+    }
+    setResult([<div className="text-xs truncate">User not found</div>])
+    return
+  };
+
   return (
     <div className="relative block">
       <input
@@ -7,6 +28,7 @@ export default function Searchbar() {
         name="searchbar"
         id="searchbar"
         placeholder="Search user..."
+        onChange={search}
       />
       <span className="absolute inset-y-1 left-1 flex items-center pl-2 text-neutral-400 peer-focus:text-neutral-50">
         <svg
@@ -24,9 +46,11 @@ export default function Searchbar() {
           />
         </svg>
       </span>
-      <div className="block absolute bg-neutral-800 w-full top-10">
-        hello people
-      </div>
+      {result &&
+        <div className="block absolute bg-neutral-800 w-full mt-1 p-3.5 rounded-lg">
+          {result.map(user => user)}
+        </div>
+      }
     </div>
   );
 }
