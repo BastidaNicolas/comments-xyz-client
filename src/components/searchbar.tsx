@@ -27,7 +27,7 @@ export default function Searchbar() {
         type="search"
         name="searchbar"
         id="searchbar"
-        placeholder="Search user..."
+        placeholder="Search user"
         onChange={search}
       />
       <span className="absolute inset-y-1 left-1 flex items-center pl-2 text-neutral-400 peer-focus:text-neutral-50">
@@ -47,7 +47,7 @@ export default function Searchbar() {
         </svg>
       </span>
       {result &&
-        <div className="block absolute bg-neutral-800 w-full mt-1 p-3.5 rounded-lg">
+        <div className="block absolute bg-neutral-800 w-full mt-1 p-3.5 rounded-lg z-50">
           {result.map(user => user)}
         </div>
       }
