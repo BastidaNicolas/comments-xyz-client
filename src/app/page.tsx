@@ -35,6 +35,10 @@ export default function Home() {
         {/* searchbar has UserCard as dependency */}
         <Searchbar/>
       </div>
+      <div className="bg-zinc-900 py-3 px-5 my-2 rounded">
+        <h2 className="text-xl font-bold border-b-2 mb-5">User about</h2>
+        
+      </div>
     </div>
   );
 }
