@@ -13,7 +13,7 @@ export default function Searchbar() {
       return
     }
     if (e.target.value !== "user not found") {
-      setResult([<UserCard/>,<UserCard/>,<UserCard/>])
+      setResult([<UserCard key={1}/>,<UserCard key={2}/>,<UserCard key={3}/>])
       return
     }
     setResult([<div className="text-xs truncate">User not found</div>])
@@ -48,7 +48,7 @@ export default function Searchbar() {
       </span>
       {result &&
         <div className="block absolute bg-neutral-800 w-full mt-1 p-3.5 rounded-lg z-50">
-          {result.map(user => user)}
+          {result.map((user: any) => user)}
         </div>
       }
     </div>
