@@ -23,7 +23,7 @@ export default function UserAbout() {
         eleifend sapien ipsum sed sapien.
       </p>
       <div className="text-sm text-neutral-400 col-span-full row-start-3">
-        123 sol from 10 wallets
+        123 from 45 users 
       </div>
     </div>
   );
