@@ -16,7 +16,7 @@ export default function Searchbar() {
       setResult([<UserCard key={1}/>,<UserCard key={2}/>,<UserCard key={3}/>])
       return
     }
-    setResult([<div className="text-xs truncate">User not found</div>])
+    setResult([<div key={1} className="text-xs truncate">User not found</div>])
     return
   };
 
