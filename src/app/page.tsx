@@ -8,6 +8,7 @@ import UserAbout from "@/components/userAbout";
 import UserMenu from "@/components/userMenu";
 import ConnectButton from "@/components/connectButton";
 import PostComment from "@/components/postComment";
+import Comment from "@/components/comment";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -55,6 +56,12 @@ export default function Home() {
         <h2 className="text-xl font-bold border-b-2 mb-5">Post comment</h2>
         <div className="max-w-[512px]">
           <PostComment/>
+        </div>
+      </div>
+      <div className="relative bg-zinc-900 py-3 px-5 my-2 rounded min-h-[16rem]">
+        <h2 className="text-xl font-bold border-b-2 mb-5">Comment</h2>
+        <div className="max-w-[512px]">
+          <Comment/>
         </div>
       </div>
     </div>
