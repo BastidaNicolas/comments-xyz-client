@@ -1,7 +1,7 @@
 export default function Comment() {
-    return (
-      <div>
-        lolxd
-      </div>
-    );
-  }
+  return (
+    <div className="">
+      
+    </div>
+  );
+}
