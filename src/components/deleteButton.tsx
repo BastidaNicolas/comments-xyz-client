@@ -1,6 +1,6 @@
 export default function DeleteButton() {
   return (
-    <button className="text-neutral-400 hover:text-neutral-50">
+    <button className="text-neutral-400 hover:text-red-600 focus:text-red-600">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

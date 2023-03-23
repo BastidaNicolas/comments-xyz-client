@@ -1,14 +1,13 @@
-'use client';
+"use client";
 
 import { useState } from "react";
 
 export default function ContributionButton() {
-
-  const [sol, setSol] = useState('123');
-  const [users, setUsers] = useState('45')
+  const [sol, setSol] = useState("123");
+  const [users, setUsers] = useState("45");
 
   return (
-    <button className="flex items-center text-neutral-400 hover:text-neutral-50 mr-5">
+    <button className="flex items-center text-sm text-transparent bg-clip-text bg-gradient-to-r from-neutral-400 to-neutral-400 hover:from-[#9945FF] hover:to-[#14F195] mr-5 truncate">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="101"

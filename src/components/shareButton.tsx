@@ -1,3 +1,5 @@
+'use client';
+
 export default function ShareButton() {
   return (
     <button className="text-neutral-400 hover:text-neutral-50">
