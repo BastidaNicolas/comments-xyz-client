@@ -1,6 +1,14 @@
+'use client';
+
+import { useState } from "react";
+
 export default function ContributionButton() {
+
+  const [sol, setSol] = useState('123');
+  const [users, setUsers] = useState('45')
+
   return (
-    <button type="submit" className="flex items-center">
+    <button className="flex items-center text-neutral-400 hover:text-neutral-50 mr-5">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="101"
@@ -31,7 +39,7 @@ export default function ContributionButton() {
           </linearGradient>
         </defs>
       </svg>
-      123 from 45 users
+      {sol} from {users} users
     </button>
   );
 }
