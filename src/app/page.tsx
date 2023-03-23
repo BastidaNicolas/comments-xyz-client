@@ -58,7 +58,7 @@ export default function Home() {
           <PostComment/>
         </div>
       </div>
-      <div className="relative bg-zinc-900 py-3 px-5 my-2 rounded min-h-[16rem]">
+      <div className="bg-zinc-900 py-3 px-5 my-2 rounded min-h-[16rem]">
         <h2 className="text-xl font-bold border-b-2 mb-5">Comment</h2>
         <div className="max-w-[512px]">
           <Comment/>
