@@ -1,6 +1,6 @@
 export default function PostButton() {
   return (
-    <button type="submit" className="text-sm font-bold bg-fuchsia-600 hover:bg-fuchsia-500 hover:cursor-pointer p-1 md:px-2 md:py-1 rounded-lg peer-focus-within:self-end">
+    <button type="submit" className="text-sm font-bold bg-fuchsia-600 hover:bg-fuchsia-500 hover:cursor-pointer p-1 md:px-2 md:py-1 rounded-lg peer-focus-within:self-end focus:self-end">
       <div className="hidden md:block" >Comment</div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
