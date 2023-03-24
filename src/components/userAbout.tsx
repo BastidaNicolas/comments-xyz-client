@@ -8,7 +8,7 @@ export default function UserAbout() {
       <div className="flex flex-row">
         <div className="relative min-w-[4rem] mr-2.5">
           <Image
-            className="absolute bottom-0"
+            className="absolute bottom-0 object-cover"
             src={placeholderImg}
             alt="user profile image"
             height={64}

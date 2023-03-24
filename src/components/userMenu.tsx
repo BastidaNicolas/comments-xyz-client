@@ -41,6 +41,7 @@ export default function UserMenu() {
         <div>
           <Image
             src={placeholderImg}
+            className="object-cover"
             alt="user profile image"
             height={32}
             width={32}

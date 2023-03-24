@@ -13,6 +13,7 @@ export default function Comment() {
         <Link href={"/"}>
           <Image
             src={placeholderImg}
+            className="object-cover"
             alt="user profile image"
             width={44}
             height={44}

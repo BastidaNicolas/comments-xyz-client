@@ -8,8 +8,8 @@ export default function UserForm() {
 
     return (
         <form className="">
-            <div>
-                <Image src={profileImage} alt="user profile image" width={44} height={44} ></Image>
+            <div className="w-20 h-20">
+                <Image className="rounded-full w-20 h-20 object-cover" src={profileImage} alt="user profile image" width={80} height={80} ></Image>
             </div>
             <div>
                 <label htmlFor="usernameInput">Username</label>

@@ -14,6 +14,7 @@ export default function PostComment() {
         <div className="relative mr-2.5 hidden md:block">
           <Image
             src={placeholderImg}
+            className="object-cover"
             alt="user profile image"
             height={44}
             width={44}
