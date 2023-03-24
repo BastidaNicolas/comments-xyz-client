@@ -9,6 +9,7 @@ import UserMenu from "@/components/userMenu";
 import ConnectButton from "@/components/connectButton";
 import PostComment from "@/components/postComment";
 import Comment from "@/components/comment";
+import UserForm from "@/components/userForm";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -63,6 +64,10 @@ export default function Home() {
         <div className="max-w-[512px]">
           <Comment/>
         </div>
+      </div>
+      <div className="bg-zinc-900 py-3 px-5 my-2 rounded ">
+        <h2 className="text-xl font-bold border-b-2 mb-5">User form</h2>
+          <UserForm/>
       </div>
     </div>
   );
