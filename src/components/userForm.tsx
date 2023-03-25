@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function UserForm() {
     
-    const [profileImage, setProfileImage] = useState<string>('https://i.imgur.com/fPIhmeG.jpg');
+    const [profileImage, setProfileImage] = useState<string>('https://i.imgur.com/Bg8VuLj.png');
 
     return (
         <form className="max-w-sm m-auto bg-neutral-800 pt-6 px-4 pb-2 rounded-lg">

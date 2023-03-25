@@ -8,14 +8,18 @@ import Link from "next/link";
 export default function UserMenu() {
   const [clicked, setClicked] = useState<Boolean>(false);
 
-  const handleOpen = () => {
+  const handleOpen = (e: any) => {
+    if (e.target.id === "backdrop") {
+      setClicked(!clicked);
+      return;
+    }
     setClicked(!clicked);
     return;
   };
 
   return (
     <div
-      className="absolute bottom-5 right-5 md:left-0 md:top-0 md:relative w-fit"
+      className="z-50 absolute bottom-5 right-5 md:left-0 md:top-0 md:relative w-fit"
       id="nav-button"
     >
       <button
@@ -47,11 +51,17 @@ export default function UserMenu() {
             width={32}
           ></Image>
         </div>
+        <div
+          id="backdrop"
+          className={`${
+            clicked ? "block" : "hidden"
+          } fixed top-0 left-0 w-full h-full bg-transparent Z-40`}
+        ></div>
       </button>
       <nav
         className={`${
           clicked ? "" : "hidden"
-        } absolute right-0 bottom-11 md:-bottom-[8.3rem] py-1 pl-4 pr-1 rounded-lg truncate text-right w-fit bg-neutral-800 z-40`}
+        } absolute right-0 bottom-11 md:-bottom-[8.3rem] py-1 pl-4 pr-1 rounded-lg truncate text-right w-fit bg-neutral-800 z-50`}
       >
         <ul>
           <li>

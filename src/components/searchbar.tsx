@@ -21,7 +21,7 @@ export default function Searchbar() {
   };
 
   return (
-    <div className="relative block">
+    <div onClick={search} className="relative block z-50">
       <input
         className="peer bg-neutral-800 focus:bg-neutral-700 focus:outline-none w-full block text-sm py-2.5  pl-10 pr-3.5 rounded-lg"
         type="search"
