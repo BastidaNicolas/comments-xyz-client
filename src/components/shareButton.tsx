@@ -15,7 +15,7 @@ export default function ShareButton() {
   };
 
   const handleCopy = (e: any) => {
-    if (e.target.id === "") {
+    if (e.target.id !== "copyButton") {
       return;
     }
     let copiedLink = e.target.parentElement.previousSibling.value;
